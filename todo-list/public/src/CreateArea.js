@@ -81,7 +81,6 @@ function CreateArea(props) {
         />
         {isExpanded && (
           <button type='submit' onClick={submitNote}>
-            {/* ➕ */}
             <i className='fas fa-plus'></i>
           </button>
         )}
