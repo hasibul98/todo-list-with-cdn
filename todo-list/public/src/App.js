@@ -1,11 +1,5 @@
-import React, { useState } from 'react';
-import Header from './Header.js';
-import Footer from './Footer.js';
-import Note from './Note.js';
-import CreateArea from './CreateArea.js';
-
 function App() {
-  const [notes, setNotes] = useState([]);
+  const [notes, setNotes] = React.useState([]);
 
   function addNote(newNote) {
     setNotes((prevNotes) => {
@@ -40,5 +34,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
