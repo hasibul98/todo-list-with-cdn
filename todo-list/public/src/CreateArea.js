@@ -25,7 +25,7 @@ function CreateArea(props) {
       content: "",
     });
     e.preventDefault();
-    setExpanded(false); 
+    setExpanded(false);
   }
 
   function expand() {
@@ -44,7 +44,7 @@ function CreateArea(props) {
       document.addEventListener("mousedown", handleClickOutside);
     } else {
       document.removeEventListener("mousedown", handleClickOutside);
-    };
+    }
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -81,7 +81,8 @@ function CreateArea(props) {
         />
         {isExpanded && (
           <button type='submit' onClick={submitNote}>
-            ➕
+            {/* ➕ */}
+            <i className='fas fa-plus'></i>
           </button>
         )}
       </form>
